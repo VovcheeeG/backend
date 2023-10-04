@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main_style.css">
+    <title>Main-Page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="./img/logo.svg" alt="логотип">
+                <a href="#">PROJECT</a>
+            </div>
+
+            <div class="search_block">
+                <div class="search_field">
+                    <form>
+                        <img src="./img/search.svg" alt="иконка поиска">
+                        <input type="text" placeholder="Search...">
+                    </form>
+                </div>
+
+                <div class="active_notification">
+                    <a href="#"><img src="./img/bell.svg" alt="значок уведомления"></a>
+                    <!-- <div class="green_ball"></div> -->
+                </div>
+            </div>
+
+            <div class="profile_icon">
+                <div class="avatar">
+                    <a href="#">
+                        <img src="./img/avatar.svg" alt="аватар пользователя">
+                    </a>
+                </div>
+
+                <div class="arrow-pointing-down">
+                    <img src="./img/arrow-down.svg" alt="стрелка направленная">
+                </div>
+            </div>
+        </header>
+
+        <div class="splitter">
+
+            <nav>
+                <div class="main_nav">
+                    <div class="profile">
+                        <img src="./img/nav/main-nav/ri_account-circle-line.svg" alt="иконка профиля">
+                        <a href="./index.html">Профиль</a>
+                    </div>
+
+                    <div class="news">
+                        <img src="./img/nav/main-nav/ph_newspaper.svg" alt="иконка новостей">
+                        <a href="#">Новости</a>
+                    </div>
+
+                    <div class="message">
+                        <img src="./img/nav/main-nav/ri_message-3-line.svg" alt="иконка сообщений">
+                        <a href="#">Сообщения</a>
+                    </div>
+
+                    <div class="friends">
+                        <img src="./img/nav/main-nav/mdi_account-supervisor-outline.svg" alt="иконка друзей">
+                        <a href="#">Друзья</a>
+                    </div>
+
+                    <div class="teams">
+                        <img src="./img/nav/main-nav/fa6-brands_teamspeak.svg" alt="иконка команд">
+                        <a href="#">Команды</a>
+                    </div>
+
+                    <div class="tournaments">
+                        <img src="./img/nav/main-nav/tabler_tournament.svg" alt="иконка турниров">
+                        <a href="#">Турниры</a>
+                    </div>
+
+                    <div class="rating">
+                        <img src="./img/nav/main-nav/jam_crown.svg" alt="иконка рейтинга">
+                        <a href="#">Рейтинг</a>
+                    </div>
+
+                    <div class="streams">
+                        <img src="./img/nav/main-nav/solar_play-stream-linear.svg" alt="иконка стримов">
+                        <a href="#">Стримы</a>
+                    </div>
+                </div>
+
+                <div class="supported_nav">
+                    <div class="help">
+                        <img src="./img/nav/supported-nav/iconoir_help-circle.svg" alt="иконка помощи">
+                        <a href="#">Помощь</a>
+                    </div>
+
+                    <div class="launguage">
+                        <img src="./img/nav/supported-nav/iconoir_language.svg" alt="иконка языка">
+                        <a href="#">Язык
+                            <!-- Костыль, так как хз как грамотно сделать -->
+                            <img src="./img/nav/supported-nav/ic_round-arrow-back-ios.svg" alt="стрелка вниз">
+                        </a>
+                        <!-- ------------------------------------------------------------------ -->
+                    </div>
+                </div>
+            </nav>
+
+            <main>
+                <div class="big_picture">
+                    <img src="./img/main/main-picture.png" alt="главная картинка">
+                </div>
+                <div class="splitter">
+                    <div class="top_team">
+                        <h1>Команда недели</h1>
+                        <div class="team_nav">
+                            <div class="game">
+                                <span>Game</span>
+                            </div>
+                            <div class="discription">
+                                <span>Discription</span>
+                            </div>
+                            <div class="admin">
+                                <span>Admin</span>
+                            </div>
+                            <div class="age_limit">
+                                <span>Age limit</span>
+                            </div>
+                            <div class="members">
+                                <span>Members</span>
+                            </div>
+                        </div>
+                        <div class="top_teams">
+                            <div class="team_0">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">League of <br>Legends</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+
+                            <div class="team_1">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">Minecraft</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+
+                            <div class="team_2">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">Minecraft</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+
+                            <div class="team_3">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">Minecraft</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+
+                            <div class="team_4">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">Minecraft</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+                        </div>
+                        <div class="switch">
+                            <div class="points">
+                                <div class="point" id="first_point"></div>
+                                <div class="point" id="second_point"></div>
+                                <div class="point" id="thirty_point"></div>
+                            </div>
+
+                            <div class="chapter">
+                                <a href="#">Перейти к разделу</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small_blocks">
+                        <div class="tournaments">
+                            <h1>Турниры</h1>
+                            <div class="slider_tournaments">
+                                <div class="rectangle" id="first_rectangle"></div>
+                                <div class="rectangle" id="second_rectangle"></div>
+                                <div class="rectangle" id="thirty_rectangle"></div>
+                            </div>
+                            <div class="switch">
+                                <div class="points">
+                                    <div class="point" id="first_point"></div>
+                                    <div class="point" id="second_point"></div>
+                                    <div class="point" id="thirty_point"></div>
+                                </div>
+
+                                <div class="chapter">
+                                    <img src="./img/main/arrow-right.svg" alt="кнопка перемещения">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="streams">
+                            <h1>Стримы</h1>
+                            <div class="slider_tournaments">
+                                <div class="rectangle" id="first_rectangle"></div>
+                                <div class="rectangle" id="second_rectangle"></div>
+                                <div class="rectangle" id="thirty_rectangle"></div>
+                            </div>
+                            <div class="switch">
+                                <div class="points">
+                                    <div class="point" id="first_point"></div>
+                                    <div class="point" id="second_point"></div>
+                                    <div class="point" id="thirty_point"></div>
+                                </div>
+
+                                <div class="chapter">
+                                    <img src="./img/main/arrow-right.svg" alt="кнопка перемещения">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teams">
+                    <div class="top_team">
+                        <h1>Команды</h1>
+                        <div class="team_nav">
+                            <div class="game">
+                                <span>Game</span>
+                            </div>
+                            <div class="discription">
+                                <span>Discription</span>
+                            </div>
+                            <div class="admin">
+                                <span>Admin</span>
+                            </div>
+                            <div class="age_limit">
+                                <span>Age limit</span>
+                            </div>
+                            <div class="members">
+                                <span>Members</span>
+                            </div>
+                            <div class="data">
+                                <span>Date</span>
+                            </div>
+                        </div>
+                        <div class="top_teams">
+                            <div class="team_0">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">League of <br>Legends</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                    <span id="data">10/05/2023</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+
+                            <div class="team_1">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">Minecraft</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                    <span id="data">10/05/2023</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+
+                            <div class="team_2">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">Minecraft</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                    <span id="data">10/05/2023</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+
+                            <div class="team_3">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">Minecraft</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                    <span id="data">10/05/2023</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+
+                            <div class="team_4">
+                                <!-- Временное решение -->
+                                <a href="#">
+                                    <span id="game">Minecraft</span>
+                                    <span id="discription">Описание.</span>
+                                    <span id="admin">clown003</span>
+                                    <span id="age_limit">13-16</span>
+                                    <span id="members">9/10</span>
+                                    <span id="data">10/05/2023</span>
+                                </a>
+                                <!-- ----------------- -->
+                            </div>
+                        </div>
+                        <div class="switch">
+                            <a href="#">
+                                <img src="./img/main/Plus.svg" alt="кнопка добавить">
+                            </a>
+                            <a href="#">
+                                <img id="arrow_right" src="./img/main/arrow-right.svg" alt="стрелочка вправо">
+                            </a>
+                        </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+</body>
+
+</html>

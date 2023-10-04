@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #202020;
+    width: 1920px;
+    height: 1080px;
+}
+nav,
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    margin-top: 60px;
+    display: flex;
+}
+
+.logo {
+    margin-left: 80px;
+    margin-top: px;
+}
+
+.Search {
+    width: 880px;
+    height: 55px;
+    margin-top: px;
+    border: 1px solid #66FC6C;
+    border-radius: 20px;
+    margin-left: 185px;
+    background-color: #0C0C0C
+}
+
+.Search::placeholder {
+    padding-left: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.Search[type="text"] {
+    color: white;
+}
+
+.logosearch {
+    position: absolute;
+    left:417px;
+    top: 75px;
+}
+
+.notifications {
+    position: absolute;
+    left: 1314px;
+    top: 70px;
+}
+
+
+.zxc {
+    display: flex;
+    margin-left: 367px;
+}
+
+.Account {
+    position: absolute;
+    left:1713px;
+}
+
+.photo {
+    position: absolute;
+    left:1719px;
+    top: 66px;
+}
+
+.Tooogle {
+    position: absolute;
+    left:1840px;
+    top: 95px;
+}
+
+.navbar {
+    display: flex;
+    margin-left: px;
+
+}
+
+.navbaropt {
+    margin-left: 160px;
+}
+
+.qwezxc {
+    padding-left: -80px;
+}
+

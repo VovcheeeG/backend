@@ -1,0 +1,386 @@
+@font-face {
+    font-family: "ObitaemOstrov";
+    src: url("./fonts/ofont.ru_ObitaemOstrov.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Black.ttf");
+}
+
+textarea:focus, input:focus
+{
+  outline: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    height: 100%;
+    line-height: 1;
+    background: #202020;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1740px;
+    margin: 0 auto;
+    font-family: "Montserrat";
+}
+
+/*    HEADER    */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* margin-left: 80px; */
+}
+
+.logo a {
+    color: #E9E9E9;
+    font-size: 24px;
+    font-family: "ObitaemOstrov";
+}
+
+.search_block {
+    display: flex;
+    align-items: center;
+}
+
+.search_field {
+    display: flex;
+    align-items: center;
+    margin-right: 33px;
+    width: 881px;
+    max-width: 100%;
+    height: 55px;
+    background: #0C0C0C;
+    border-radius: 20px;
+    border: 1px solid #66FC6C;
+}
+
+.search_field img {
+    margin-top: 5px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.search_field input {
+    margin-left: 20px;
+    padding-right: 620px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #0C0C0C;
+    color: #E9E9E9;
+}
+
+.active_notification {
+    display: flex;
+}
+
+/* .active_notification .green_ball {
+    width: 15px;
+    height: 15px;
+    background-color: #66FC6C;
+    border-radius: 30px;
+    margin-left: -14px;
+} */
+
+.profile_icon {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.avatar {
+    border-radius: 100%;
+    border: 1px solid #66FC6C;
+    padding: 5px;
+    margin-right: 30px;
+}
+
+.arrow-pointing-down {
+    cursor: pointer;
+}
+
+/* SPLITTER */
+
+.splitter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+/* NAV */
+
+nav a {
+    color: #E9E9E9;
+    margin-left: 60px;
+    font-weight: 300;
+}
+
+.main_nav div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.supported_nav div {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+/* MAIN */
+
+main span {
+    color: #E9E9E9;
+}
+
+main h1 {
+    padding-top: 27px;
+    margin-left: 81px;
+    font-size: 24px;
+    color: #66FC6C;
+    font-weight: 500;
+}
+
+main .big_picture img {
+    width: 100%;
+}
+
+main .top_team {
+    width: 100%;
+    max-width: 100%;
+    background: #303331;
+    border-radius: 30px;
+}
+
+main .team_nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-bottom: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #292929;
+}
+
+main .small_blocks {
+    margin-left: 19px;
+}
+
+/* TOP_TEAMS */
+
+.top_teams {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.top_teams a {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top_teams span {
+    margin-top: 21px;
+    margin-bottom: 18px;
+}
+
+.top_teams div {
+    border-bottom: 2px solid #292929;
+}
+
+.top_teams .team_4 {
+    border: none;
+}
+
+.top_team .switch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 25px;
+    margin-top: 47px;
+}
+
+.points {
+    display: flex;
+    margin-right: 85px;
+}
+
+.points .point {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 2px solid #66FC6C;
+}
+
+#first_point {
+    cursor: pointer;
+    background: #66FC6C;
+}
+
+#second_point {
+    cursor: pointer;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#thirty_point {
+    cursor: pointer;
+}
+
+.top_team .chapter {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 85px;
+}
+
+.top_team .chapter a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border: 1px solid #66FC6C;
+    background: #66FC6C;
+    border-radius: 15px;
+    color: #292929;
+    font-weight: 600;
+}
+
+/* TOURNAMENTS */
+
+main .tournaments {
+    width: 100%;
+    min-width: 480px;
+    background: #303331;
+    border-radius: 30px;
+}
+
+.slider_tournaments {
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+}
+
+.rectangle {
+    width: 134px;
+    height: 100px;
+    background: #292929;
+    border-radius: 20px;
+}
+
+#second_rectangle {
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.tournaments .switch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 23px;
+    padding-bottom: 20px;
+    margin-right: 26px;
+}
+
+.tournaments .chapter {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 35px;
+    border-radius: 100%;
+    background: #66FC6C;
+    cursor: pointer;
+}
+
+/* STREAMS */
+
+main .streams {
+    width: 100%;
+    min-width: 480px;
+    background: #303331;
+    border-radius: 30px;
+}
+
+.streams {
+    margin-top: 16px;
+}
+
+.streams .switch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 36px;
+    padding-bottom: 20px;
+    margin-right: 26px;
+}
+
+.streams .chapter {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 35px;
+    border-radius: 100%;
+    background: #66FC6C;
+    cursor: pointer;
+}
+
+/* TEAMS */
+
+.teams {
+    margin-top: 21px;
+    margin-bottom: 200px;
+}
+
+.teams .switch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.teams .switch img {
+    padding: 18px;
+    border-radius: 100%;
+    background: #66FC6C;
+}
+
+#arrow_right {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 22px;
+    padding-left: 22px;
+    margin-left: 22px;
+}

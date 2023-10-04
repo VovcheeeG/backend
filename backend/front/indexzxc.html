@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylezxc.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <script defer src="./aaa.js"></script>
+    <script defer src="./lettering.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous">
+    </script>
+    <script defer src="./export.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <title>Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <section id="header">
+                <div class="background">
+                    <a href="./main1.html" class="logo">
+                        <img src="./arcticons_gamelauncher (1).svg">
+                        Project
+                    </a>
+            </section>
+        </header>
+        <main>
+            <section>
+                <div class="circle">
+                    <div class="main_jpg"></div>
+                    <div class="text">
+                        <h1>
+                            <span class="char1">С </span>
+                            <span class="char2">о </span>
+                            <span class="char3">б </span>
+                            <span class="char4">е </span>
+                            <span class="char5">р </span>
+                            <span class="char6">и </span>
+                            <span class="char7"></span>
+                            <span class="char8" id="green">С </span>
+                            <span class="char9" id="green">в </span>
+                            <span class="char10" id="green">о </span>
+                            <span class="char11" id="green">ю </span>
+                            <span class="char12"></span>
+                            <span class="char13">К </span>
+                            <span class="char14">о </span>
+                            <span class="char15">м </span>
+                            <span class="char16">а </span>
+                            <span class="char17">н </span>
+                            <span class="char18">д </span>
+                            <span class="char19">у </span>
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <button class="registration" id="bubble">
+                    //register...
+                    <span class="bubbles">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="gooey">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                result="highContrastGraphic" />
+                            <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                        </filter>
+                    </defs>
+                </svg>
+            </section>
+            <section>
+                <div class="wrapper">
+                    <span class="icon-close">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </span>
+                    <div class="form-box register">
+                        <h2>Регистрация</h2>
+                        <form id="register" action="/apply/" method="post" name="form">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <ion-icon name="person-circle-outline"></ion-icon>
+                                </span>
+                                <input type="text" name="nickname" id="nickname" required />
+                                <label>Имя пользователя</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </span>
+                                <input type="email" name="email" id="email" required />
+                                <label>Почта</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <ion-icon name="key-outline"></ion-icon>
+                                </span>
+                                <input type="password" name="password" id="password" required />
+                                <label>Пароль</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox" />Я согласен с условиями и политикой
+                                    сайта</label>
+                            </div>
+                            <button type="submit" class="btn">Зарегестрироваться</button>
+                            <div class="login-register">
+                                <p>
+                                    У вас уже есть аккаунт?<a href="#" class="login-link">Войти</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form-box login">
+                        <h2>Вход</h2>
+                        <form action="#" name="login">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </span>
+                                <input type="email" name="email" required />
+                                <label>Почта</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <ion-icon name="key-outline"></ion-icon>
+                                </span>
+                                <input type="password" name="password" required />
+                                <label>Пароль</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox" />Запомни меня</label>
+                                <a href="#">Забыли пароль?</a>
+                            </div>
+                            <button type="submit" class="btn">Войти</button>
+                            <div class="login-register">
+                                <p>
+                                    У вас нет аккаунта?
+                                    <a href="#" class="register-link">Зарегестрируйтесь</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="roll">
+                    <button class="bot" id="toBot"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section id="main">
+                <div class="sub">
+                    <div class="logo">
+                        <img src="./arcticons_gamelauncher (1).svg">
+                        <h3>Project</h3>
+                        <div class="benefit">
+                            <h2>Польза нашего проекта</h2>
+                            <div class="benefit_info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+                                molestiae odit voluptatum illum sequi, hic impedit explicabo fugiat sed eum
+                                necessitatibus
+                                quidem voluptatem eaque fugit. Ea facere perferendis dolores doloremque?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quidem id. Est maxime ab
+                                possimus cum animi perspiciatis velit maiores accusamus provident, tenetur, vitae dolore
+                                eaque, omnis iste. Temporibus, qui?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, sit? Possimus dicta
+                                velit
+                                quod quo nam saepe dignissimos, architecto deserunt at dolorum excepturi suscipit neque?
+                                Quae voluptate ex tempore reprehenderit.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separation">
+                        <img class="sep_img" src="./separation.svg">
+                    </div>
+
+                    <div class="advantages">
+                        <h2>Преимущства</h2>
+                        <div class="advantages_info">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Adipisci
+                            iusto
+                            ipsum commodi saepe ipsam esse sit repudiandae reprehenderit laudantium fugit veritatis
+                            inventore doloremque nihil, vel deleniti aperiam nobis quae repellat!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta unde quisquam
+                            itaque corporis dignissimos, cum dolor illum odio eum explicabo vitae assumenda inventore
+                            reprehenderit quis rem ad facilis nam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque aspernatur
+                            molestiae modi recusandae, cum amet eum non a optio quibusdam, sequi deleniti mollitia
+                            reprehenderit dolor suscipit provident nihil nostrum!
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <div class="logo">
+                <img src="./arcticons_gamelauncher (1).svg">
+                Project
+            </div>
+            <div class="follow">
+                <h3>Follow Us</h3>
+            </div>
+            <nav class="social">
+                <a class="vk">
+                    <img src="./vk.svg">
+                </a>
+                <a class="twitter">
+                    <img src="./twitter.svg">
+                </a>
+                <a class="discord">
+                    <img src="./discord.svg">
+                </a>
+            </nav>
+            <div class="roll">
+                <button class="top" id="toTop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="copyright">
+                Copyright ©2023 All rights reserved
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        $("#toBot").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".benefit").offset().top
+            }, 50);
+        });
+    </script>
+    <script>
+        $("#toTop").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".background").offset().top
+            }, 50);
+        });
+    </script>
+
+</body>
+
+
+</html>
